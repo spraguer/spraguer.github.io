@@ -1,0 +1,546 @@
+body, html, p, form, ul, li, h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	text-align: center;
+	font-size: 100%;
+}
+
+a {
+	text-decoration: none;
+	color:#666;
+}
+
+img {
+	border: 0px;
+}
+
+@font-face {
+    font-family: "Proxima Nova Light";
+    src: url("ProximaNova-Light.otf");
+}
+
+@font-face {
+    font-family: "Proxima Nova ExtraBold";
+    font-weight: bold;
+    src: url("ProximaNova-Extrabold.otf");
+}
+
+body * {
+	font-family: "Proxima Nova Light", sans-serif !important;
+}
+
+
+strong, b, .bold, .bold a {
+	font-family: "Proxima Nova ExtraBold", sans-serif !important;
+	font-weight: bold;
+}
+
+.allcaps {
+	text-transform: uppercase;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.row {
+	width: 1024px;
+	height: 100%;
+	margin: 0px auto;
+}
+
+.top_nav {
+	background-image: url("../img/home_main_bg.jpg");
+	background-color: #000;
+	background-position: top center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 100%;
+	overflow: hidden;
+}
+
+.welcome {
+	width: 600px;
+	padding: 100px 0;
+	margin: 0px auto;
+}
+
+.top_moon {
+	width: 400px;
+}
+
+.top_label {
+	width: 600px;
+}
+
+.top_wedding {
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+	font-size: 1.2rem;	
+}
+
+.top_nav *, .sky_white {
+	color:#FFF !important; 
+	text-shadow: 0 0 20px #46b3e1 !important;
+}
+
+
+
+.narrative {
+	width: 700px;
+	margin: 50px auto;
+}
+
+
+.cupid {
+	position: fixed;
+	width: 200px;
+	height: 170px;
+	z-index: 100;
+	top: 10%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.cupid.cupid_left {
+	left: 10%;	
+	background-image: url("../img/cupid_left.png");	
+}
+
+.cupid.cupid_right {
+	background-image: url("../img/cupid_right.png");
+}
+
+
+.how_we_met {
+	width: 60%;
+	margin: 0px auto;
+	padding: 10% 0;
+}
+
+
+
+.stanford {
+	background-color: #040406;
+	height: 600px;
+	background-image:url("../img/stanford_bg.png");
+	background-size: 100% auto;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.hostel {
+	background: -webkit-linear-gradient(top, #6bc44d , #000);
+}
+
+.bunkbed {
+	position: relative;
+	background-image: url("../img/hostel.png");
+	background-size: 70% auto;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	height: 1400px;
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+}
+
+.bunkbed_text {
+	z-index: 1000;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+}
+
+.bunkbed_text h3 {
+	display: block;
+	width: 50%;
+	margin: 0px auto;
+}
+
+.bunkbed_text * {
+	color:#FFF !important;
+}
+
+.crossed {
+	padding-top: 15%;
+}
+
+
+
+
+
+.camping {
+	z-index: 10;
+	position: relative;
+	width: 100%;
+	height: 1000px;
+	margin-top: 200px;
+	background-image: url("../img/back_camping.png");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.camp_text {
+	width: 100%;
+	z-index: 200;
+}
+
+.camp_text h1, .camp_text h3 {
+	color:#FFF;
+}
+
+
+
+.funfair {
+	position: relative;
+	z-index: 100;
+	background-image: url("../img/evening_moment.png");
+	background-size: auto 100%;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	height: 800px;
+}
+
+
+
+
+
+
+
+
+.chrisfeena_main {
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	z-index: 100;
+	height: 400px;
+	top: 10%;
+}
+
+.chrisfeena_main .holder {
+	width: 800px;
+	height: 500px;
+	margin: 0px auto;
+}
+
+.circle_main {
+	width: 300px;
+	float: left;
+	position: relative;
+	height: 300px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.circle_main.feena {
+	background-image:url("../img/feena_main.png");
+}
+
+.circle_main.chris {
+	float: right;
+	background-image:url("../img/chris_main.png");
+}
+
+
+
+
+
+.magical_fair * {
+	color:#FFF;
+	z-index: 1000;
+	position: relative;	
+}
+
+
+.magical_fair .row {
+	padding-top: 600px;
+}
+
+
+
+
+
+
+
+
+.gazebo {
+	height: 800px;
+	background-image: url("../img/bg_gazebo.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-color: #FFF;
+}
+
+.gazebo_shrine {
+	width: 350px;
+	height: 363px;
+	position: relative;
+	background-image: url("../img/main_gazebo.png");
+	background-repeat: no-repeat;
+	background-position: center bottom`;
+	background-size: 100%;
+	margin: 0px auto;
+	z-index: 13300;
+	margin-top: 238px;
+}
+
+.gazebo h1 {
+	padding-top: 100px;
+}
+
+.gazebo .col {
+	width: 30%;
+	position: relative;
+	z-index: 4000;
+	padding-top: 60px;
+	float: left;
+}
+
+.gazebo .col.middle {
+	text-align: center;
+	margin: 0 5%;
+}
+
+.gazebo .col.left {
+	text-align: right;
+}
+
+.gazebo .col.right {
+	text-align: left;
+}
+
+.gazebo h2, .gazebo h4 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.gazebo h2 {
+	margin: 10px 0 50px 0;
+}
+
+
+.dw_reminder {
+	display: inline-block;
+	border: 1px solid #333;
+	color:#333;
+	padding: 10px 20px;
+	margin-bottom: 6px;
+	border-radius: 4px;
+}
+
+.dw_reminder:hover {
+	background-color: #FFF;
+	border: 1px solid #DDD;
+}
+
+
+
+.threecol {
+	width: 30%;
+	float: left;
+	margin-right: 5%;
+}
+
+.threecol.last {
+	margin-right: 0px !important;
+}
+
+.further_activities {
+	padding: 100px 0;
+	background-color: #FFF;
+}
+
+.further_activities img {
+	width: 60%;
+	margin: 0px auto;
+	margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clouds {
+	height: 500px;
+	width: 100%;
+	position: absolute;
+	background-image: url("../img/cloud_sep.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+.metagain {
+	padding: 250px 0 100px 0;
+	background-color: #FFF;
+}
+
+.metagain .row {
+	position: relative;
+	z-index: 1000;
+	background-image: url("../img/long_line.png");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.metagain img {
+	width: 60px;
+	height: 60px;
+	margin:  0 20px -15px 20px;
+}
+
+img.picturesque {
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	margin: -120px 0 40px 0;
+}
+
+
+img.loveshape {
+	width: 30px;
+	height: 30px;
+	margin: -17px 10px 60px 269px;
+}
+
+img.trustinlove {
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	margin: 40px -40px -100px 0 ;
+}
+
+
+h1.halloween {
+	margin: 120px 0 120px -120px;
+}
+
+h1.thanksgiving {
+	margin: 120px 0 120px -160px;
+}
+
+h1.christmas {
+	margin: 120px 0 120px 276px;
+}
+
+
+
+
+.photos_gallery {
+	background-color: #FFF;
+	padding-top: 100px;
+	background-image: url("../img/thin_thread.png");
+	background-size: 100% 400px;
+	background-repeat: repeat-y;
+}
+
+.photo_row li {
+	display: inline-block;
+	background-image: url("../img/camer_frame.png");
+	width: 300px;
+	height: 332px;
+	margin: 0 20px 60px 20px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.photo_row li:nth-child(even) {
+	-ms-transform: rotate(-2deg); /* IE 9 */
+    -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+    transform: rotate(-2deg);
+}
+
+.photo_row li:nth-child(odd) {
+	-ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    transform: rotate2deg);
+}
+
+
+
+.photo_row img {
+	width: 230px;
+	height: 228px;
+	margin: 58px 10px;
+}
+
+
+
+.registry {
+	background-image: url("../img/registry_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: top center;
+	padding: 10% 0;
+	z-index: 100;
+	position: relative;
+}
+
+.registry .gift {
+	height:120px;
+	margin-bottom: 30px;
+}
+
+.registry a {
+	color:#000;
+}
+
+.registry a:hover {
+	color:#222;
+}
+
+a .target {
+	display: inline-block;
+	background-image: url("../img/target.png");
+	background-size: cover;
+	width: 140px;
+	height: 30px;
+	margin-bottom: -4px;
+}
+
+.registry h1 {
+	margin-bottom: 10px;
+}
+
+
+.trinidad {
+	padding: 0 0 10% 0;
+}
+
+.timeline {
+	font-size: 1.4rem;
+}
+
+
+.trinidad {
+	position: relative;
+	z-index: 5000;
+}
