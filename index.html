@@ -8,6 +8,80 @@
 	<script src="js/jquery.js"></script>
   </head>
   <body>
+
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var img_to_load = [
+    'img/back_camping.png',
+    'img/bg_gazebo.jpg',
+    'img/camer_frame.png',
+    'img/chris_main.png',
+    'img/christmas.png',
+    'img/cloud_sep.png',
+    'img/cupid_left.png',
+    'img/cupid_right.png',
+    'img/evening_moment.png',
+    'img/feena_main.png',
+    'img/gift.png',
+    'img/halloween.jpeg',
+    'img/heartshape.png',
+    'img/hostel.png',
+    'img/long_line.png',
+    'img/main_gazebo.png',
+    'img/picturequre_thumb.png',
+    'img/registry_bg.jpg',
+    'img/stanford_bg.png',
+    'img/target.png',
+    'img/thanksgiving.jpg',
+    'img/thin_thread.png',
+    'img/thingstodo_bag.png',
+    'img/thingstodo_bed.png',
+    'img/thingstodo_car.png',
+    'img/trust_inlove.jpg',
+    'img/home_main_bg.jpg',
+    'img/top_label.png',
+    'img/top_moon.png',
+    'img/photo1.jpg',
+    'img/photo2.jpg',
+    'img/photo3.jpg',
+    'img/photo4.jpg',
+    'img/photo5.jpg',
+    'img/photo6.jpg',
+    ]; //add other images as well
+    var loaded_images = 0;
+    
+    for (var i=0; i<img_to_load.length; i++) {
+      var img = document.createElement('img');
+      img.src = img_to_load[i];
+      img.style.display = 'none'; // don't display preloaded images
+      img.onload = function () {
+        //write code to hide whole infograph here
+        loaded_images ++;
+        if (loaded_images == img_to_load.length) {
+          allload = parseFloat((loaded_images/img_to_load.length)*100);
+          $("#spin_number").html(allload+"%");
+          $("#spinbar").addClass("hide");
+          $("#graphic_overlay").removeClass("hide");
+        } else {
+          //write code to display progressbar 
+        }
+      }
+      document.body.appendChild(img);
+    } 
+  });
+</script>
+
+
+
+  <div id="spinbar" class="spinbar">
+    <img src="img/loading.gif" alt="spinner">
+    <h4>Loading <span id="spin_number"></span></h4>
+</div> 
+
+
+
+<div id="graphic_overlay" class="hide">
   <div class="top_nav">
   		<div class="welcome" data-bottom="background-position:top center" data-top-top="background-position:-80px center;">
   			<img src="img/top_moon.png" class="top_moon" data-center-top="margin-top:0px" data-center-bottom="margin-top:-20px">
@@ -85,11 +159,11 @@
 
 
 
-<div class="clouds"></div>
+<div id="clouds" class="clouds"></div>
 
 
 
-<div class="metagain">
+<div id="metagain" class="metagain">
 
     <div class="trinidad timeline">
     <div class="row">
@@ -103,11 +177,17 @@
 
     <div class="row">
 
+        <div class="haloween_ciricle chris_m" data-anchor-target="#clouds" 
+              data-bottom-top="top:0%;opacity:0;right:30%" data-bottom-bottom="top:15%;right:15%;opacity:1" data--900-bottom-bottom="top:15%;opacity:1;" data--1300-bottom-bottom="top:0%;opacity:0;right:50%;"></div>
+        <div class="haloween_ciricle feena_m" data-anchor-target="#clouds" 
+              data-bottom-top="top:0%;opacity:0;left:30%" data-bottom-bottom="top:15%;opacity:1;left:15%;" data--900-bottom-bottom="top:15%;opacity:1;" data--1300-bottom-bottom="top:0%;opacity:0;left:50;"></div>
+
+
         <img src="img/heartshape.png" class="loveshape">
         <h2>...and Chris & Feena have celebrated their love together ever since...</h2>
         <h1 class="halloween"><img src="img/halloween.jpeg">Halloween</h1>
         <h1 class="thanksgiving">Thanksgiving <img src="img/thanksgiving.jpg"></h1>
-        <h1 class="christmas"><img src="img/christmas.png"> Christmas</h1>
+        <h1 class="christmas"><img src="img/christmas.png"> and Christmas</h1>
 
 
         <h2>And Chris's birthday where he decided to move  back to Eugene to start their forever</h2>
@@ -207,7 +287,7 @@
 
 <div class="clear"></div>
 </div>
-
+</div> <!-- graphic overlay -->
 
 
 
