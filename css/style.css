@@ -612,3 +612,8 @@ a .target {
 	left:15%;
 	background-image: url("../img/christmas_feena.png");
 }
+
+.hotel_link {
+  text-decoration: underline;
+  cursor: pointer;
+}

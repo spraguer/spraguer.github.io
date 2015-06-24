@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chris &amp; Feena</title>
     <link rel="stylesheet" href="css/style.css" />
-	<script src="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/sweetalert.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
   </head>
   <body>
 
@@ -70,6 +72,13 @@
       document.body.appendChild(img);
     } 
   });
+  function showAccomodations(){
+	swal({
+	  title: "Thank you so much for joining us!",
+	  imageUrl : "img/hotels.png",
+	  imageSize : "400x300",
+	});
+  }
 </script>
 
 
@@ -268,10 +277,10 @@
   One line of text about what to do.
   </div>
 
-  <div class="threecol">
+  <div class="threecol" onclick="showAccomodations();">
     <h2>Accomodations</h2>
     <img src="img/thingstodo_bed.png"><br>
-     One line of text about what to do.
+    <span class="hotel_link">Click here to reserve a room</span>
   </div>
 
   <div class="threecol last">
